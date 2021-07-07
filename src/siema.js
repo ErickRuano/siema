@@ -221,7 +221,7 @@ export default class Siema {
     else if (typeof this.config.perPage === 'object') {
       this.perPage = 1;
       for (const viewport in this.config.perPage) {
-        if (window.innerWidth >= viewport) {
+        if (window.screen.width >= viewport) {
           this.perPage = this.config.perPage[viewport];
         }
       }
