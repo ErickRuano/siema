@@ -1,6 +1,6 @@
 {
-  "name": "siema",
-  "version": "1.5.1",
+  "name": "@erickruano/siema",
+  "version": "1.5.2",
   "description": "Lightweight and simple carousel with no dependencies",
   "main": "dist/siema.min.js",
   "devDependencies": {
@@ -20,7 +20,7 @@
   "files": [
     "dist"
   ],
-  "repository": "pawelgrzybek/siema",
+  "repository": "erickruano/siema",
   "author": "Pawel Grzybek <grzybecki@gmail.com> (https://pawelgrzybek.com/)",
   "license": "MIT",
   "bugs": {
