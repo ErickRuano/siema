@@ -215,13 +215,14 @@ export default class Siema {
    * Determinates slides number accordingly to clients viewport.
    */
   resolveSlidesNumber() {
+    const screenWidth = /Mobi/i.test(window.navigator.userAgent) ? window.screen.width : window.innerWidth;
     if (typeof this.config.perPage === 'number') {
       this.perPage = this.config.perPage;
     }
     else if (typeof this.config.perPage === 'object') {
       this.perPage = 1;
       for (const viewport in this.config.perPage) {
-        if (window.screen.width >= viewport) {
+        if (screenWidth >= viewport) {
           this.perPage = this.config.perPage[viewport];
         }
       }
